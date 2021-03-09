@@ -9,3 +9,9 @@
 .estilo{
     background: antiquewhite;
 }
+
+#titulo{
+    color: rgb(226, 159, 76);
+    font-size: 20px;
+    text-align: center;
+}
