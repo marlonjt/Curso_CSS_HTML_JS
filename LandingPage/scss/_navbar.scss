@@ -1,0 +1,23 @@
+// =============================================================================
+// NAVBAR - Barra de navegación principal
+// position: fixed → visible siempre al hacer scroll
+// z-index: 100 → por encima de todo el contenido
+// =============================================================================
+@use 'variables' as v;
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: v.$spacing-section;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+    z-index: 100;
+
+    h2 {
+        color: v.$color-primary;
+        font-size: 250%;
+    }
+}

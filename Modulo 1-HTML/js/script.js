@@ -1,2 +1,2 @@
 //alert("hello");
-//document.getElementById("boton").style.background = "#2C1D1D";
+//document.getElementById("btn").style.background = "#2C1D1D";

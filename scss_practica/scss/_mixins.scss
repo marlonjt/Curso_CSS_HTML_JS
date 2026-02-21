@@ -1,0 +1,31 @@
+@use 'variables' as v;
+// _mixins.scss
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+@mixin sombra {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+// Usándolo
+.card {
+  @include flex-center;
+  @include sombra;
+}
+
+@mixin texto($tamanio, $color) {
+  color: $color;
+  font-size: $tamanio;
+}
+
+.titulo {
+  @include texto(24px, v.$color-dark);
+}
+
+.subtitulo {
+  @include texto(16px, v.$color-light);
+}

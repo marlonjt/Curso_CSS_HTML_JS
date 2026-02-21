@@ -1,0 +1,27 @@
+@use 'variables'; // Importando variables
+@use 'navbar'; // Importando estilos navbar
+@use 'mixins';
+@use 'buttons';
+
+// Usándolas
+body {
+  font-family: variables.$font-main;
+  font-size: variables.$font-size-base;
+  background-color: variables.$color-background;
+  color: variables.$color-dark;
+}
+
+.button {
+  background-color: variables.$color-primary;
+  padding: variables.$spacing-sm variables.$spacing-md;
+  color: white;
+}
+
+
+$colores: red, blue, green, yellow, purple;
+
+@each $color in $colores {
+  .btn-#{$color} {
+    background-color: $color;
+  }
+}

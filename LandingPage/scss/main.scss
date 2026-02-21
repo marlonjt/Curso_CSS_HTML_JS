@@ -1,0 +1,21 @@
+// =============================================================================
+// MAIN - Archivo principal de Sass
+// Importa todos los partials en orden. El orden importa porque CSS
+// aplica estilos en cascada: base primero, luego componentes.
+// 
+// Para compilar: sass --watch scss/main.scss:css/main.css
+// =============================================================================
+
+// 1. Variables globales (sin estilos, solo definiciones)
+@use 'variables' as v;
+
+// 2. Reset y base (siempre primero)
+@use 'base';
+
+// 3. Componentes globales reutilizables
+@use 'buttons';
+
+// 4. Secciones de la página (en orden de aparición)
+@use 'navbar';
+@use 'hero';
+@use 'cards';

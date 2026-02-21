@@ -1,0 +1,18 @@
+@use 'variables' as v;
+
+%btn-base {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: v.$font-size-base;
+    color:white;
+}
+
+.btn-primary {
+    @extend %btn-base;
+    background-color: v.$color-dark;
+}
+
+.btn-secondary {
+    @extend %btn-base;
+    background-color: v.$color-light;
+}

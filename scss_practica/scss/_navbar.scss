@@ -1,0 +1,16 @@
+// _navbar.scss se puede aplicar * para no aplicar un alias como v.$color-primary si no directamente $color-primary, pero es recomendable usar un alias para evitar confusiones y mejorar la legibilidad del código.
+
+@use 'variables' as v; // aplicando alias al import para facilitar el uso
+
+nav {
+  background-color: v.$color-primary;
+
+  a {
+    color: v.$color-light;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
