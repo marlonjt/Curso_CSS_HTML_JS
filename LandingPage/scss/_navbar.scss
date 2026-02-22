@@ -6,14 +6,13 @@
 @use 'variables' as v;
 
 .navbar {
-    position: fixed;
     top: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: v.$spacing-section;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
     z-index: 100;
 
     h2 {

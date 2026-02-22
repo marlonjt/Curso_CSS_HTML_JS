@@ -1,0 +1,65 @@
+@use 'variables' as v;
+
+// Primero defines el mixin
+@mixin card($imagen, $ancho: 300px, $alto: 450px) {
+    width: $ancho;
+    height: $alto;
+    border: solid 1px;
+    margin: auto;
+    background-image: url($imagen);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    .ver-info {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.85);
+        color: #ffffff;
+        padding: 10px;
+        height: 0px;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 0.5s ease;
+
+        p {
+            background: red;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        span {
+            display: block;
+            font-size: 20px;
+            font-weight: 600;
+            color: gold;
+            margin-bottom: 5px;
+        }
+    }
+
+    &:hover .ver-info {
+        opacity: 1;
+        height: 130px;
+    }
+}
+
+// la lista y el @each
+$cards: (card1,'../assets/portada.jpg',estrellas),
+    (card2, '../assets/Torino.jpg', estrellas),
+    (card3, '../assets/Texas.jpg', estrellas);
+
+@each $nombre, $imagen, $estrellas in $cards {
+    .#{$nombre} {
+        @include card($imagen);
+    }
+}
+
+// 3. Contenedor aparte
+.contenedor-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
