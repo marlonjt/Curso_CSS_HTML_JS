@@ -2,6 +2,11 @@
 
 Repositorio de práctica del curso de **HTML, CSS y JavaScript**, con una sección extendida aplicando **Sass (SCSS)** para escribir estilos más organizados y escalables.
 
+## 🚀 Demo en vivo
+
+[![LandingPage en vivo](https://img.shields.io/badge/🔗-LandingPage%20en%20vivo-blue?style=for-the-badge)](https://marlonjt.github.io/Curso_CSS_HTML_JS/LandingPage/index.html)
+
+
 ## 🛠️ Stack Tecnológico
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) ![Sass](https://img.shields.io/badge/Sass-CC6699?style=flat&logo=sass&logoColor=white)
